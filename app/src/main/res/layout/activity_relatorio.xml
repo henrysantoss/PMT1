@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dados Principais"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:layout_column="1" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_de_viajantes"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_column="1" />
+
+                <EditText
+                    android:id="@+id/edtDadosTotViaj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:autofillHints="a"
+                    android:backgroundTint=" #fcc42c"
+                    android:editable="false"
+                    android:inputType="number"
+                    android:text="@string/_0_0" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Duração da Viagem (Dias)"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_column="1" />
+
+                <EditText
+                    android:id="@+id/edtDadosDurViagem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:autofillHints="a"
+                    android:backgroundTint=" #fcc42c"
+                    android:editable="false"
+                    android:inputType="number"
+                    android:text="@string/_0_0" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gasolina"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:layout_column="1" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total estimado de Quilômetros"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_column="1" />
+
+                <EditText
+                    android:id="@+id/edtGasolinaTotQuil"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:autofillHints="a"
+                    android:backgroundTint=" #fcc42c"
+                    android:editable="false"
+                    android:inputType="number"
+                    android:text="@string/_0_0" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Média de quilômetros por litro"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtGasolinaMediaLitro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:editable="false"
+                    android:autofillHints="a"
+                    android:backgroundTint=" #fcc42c"
+                    android:inputType="number"
+                    android:text="@string/_0_0" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Custo Médio por Litro"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtGasolinaCustoMedioLitro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:editable="false"
+                    android:autofillHints="a"
+                    android:backgroundTint=" #fcc42c"
+                    android:inputType="number"
+                    android:text="@string/_0_0" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Total de Veículos"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtGasolinaTotVaic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:autofillHints="a"
+                    android:backgroundTint=" #fcc42c"
+                    android:inputType="number"
+                    android:editable="false"
+                    android:text="@string/_0_0" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Cálculo Total"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtGasolinaCalcTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:editable="false"
+                    android:autofillHints="a"
+                    android:backgroundTint=" #fcc42c"
+                    android:inputType="number"
+                    android:text="@string/_0_0" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tárifa Aérea"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:layout_column="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Custo Estimado por Pessoa"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtTarifaCustoPessoa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:editable="false"
+                    android:autofillHints="a"
+                    android:backgroundTint=" #fcc42c"
+                    android:inputType="number"
+                    android:text="@string/_0_0" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Aluguel do Veículo"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtTarifaAluguelVeic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:editable="false"
+                    android:autofillHints="a"
+                    android:backgroundTint=" #fcc42c"
+                    android:inputType="number"
+                    android:text="@string/_0_0" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Cálculo Total"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtTarifaCalcTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:editable="false"
+                    android:autofillHints="a"
+                    android:backgroundTint=" #fcc42c"
+                    android:inputType="number"
+                    android:text="@string/_0_0" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Refeições"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:layout_column="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Custo estimado por Refeição"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtRefeicaoCustoEst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:autofillHints="a"
+                    android:editable="false"
+                    android:backgroundTint=" #fcc42c"
+                    android:inputType="number"
+                    android:text="@string/_0_0" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Refeições por Dia"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtRefeicaoDia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:editable="false"
+                    android:autofillHints="a"
+                    android:backgroundTint=" #fcc42c"
+                    android:inputType="number"
+                    android:text="@string/_0_0" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Cálculo Total"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtRefeicaoCalcTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:editable="false"
+                    android:autofillHints="a"
+                    android:backgroundTint=" #fcc42c"
+                    android:inputType="number"
+                    android:text="@string/_0_0" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hospedagem"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:layout_column="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Custo Médio (por Noite)"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtHospedagemCusto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:autofillHints="a"
+                    android:editable="false"
+                    android:backgroundTint=" #fcc42c"
+                    android:inputType="number"
+                    android:text="@string/_0_0" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Total de Noites"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtHospedagemNoites"
+                    android:layout_width="182dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:autofillHints="a"
+                    android:editable="false"
+                    android:backgroundTint=" #fcc42c"
+                    android:inputType="number"
+                    android:text="@string/_0_0" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Total de Quartos"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtHospedagemQuartos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:editable="false"
+                    android:autofillHints="a"
+                    android:backgroundTint=" #fcc42c"
+                    android:inputType="number"
+                    android:text="@string/_0_0" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Cálculo Total"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtHospedagemCalcTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:editable="false"
+                    android:autofillHints="a"
+                    android:backgroundTint=" #fcc42c"
+                    android:inputType="number"
+                    android:text="@string/_0_0" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Entretenimento"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:layout_column="1" />
+
+            </TableRow>
+
+            <ListView
+                android:id="@+id/lista"
+                android:layout_width="fill_parent"
+                android:layout_height="127dp"
+                android:dividerHeight="1dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Cálculo Total"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtEntretenimentoCalcTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:editable="false"
+                    android:autofillHints="a"
+                    android:backgroundTint=" #fcc42c"
+                    android:inputType="number"
+                    android:text="@string/_0_0" />
+
+            </TableRow>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:text="Fechar Relatório"
+                android:onClick="funcFechar"/>
+        </TableLayout>
+    </HorizontalScrollView>
+</ScrollView>

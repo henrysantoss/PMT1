@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RoteiroFacil</string>
+    <string name="logo">LOGO</string>
+    <string name="total_de_viajantes">Total de Viajantes</string>
+    <string name="_0_0">0.0</string>
+    <string name="nome">Roteiro Facil</string>
+    <string name="username">Usuario</string>
+    <string name="password">Senha</string>
+    <string name="login">Login</string>
+    <string name="inscrever">inscrever</string>
+    <string name="entrar">entrar</string>
+    <string name="criarusuario">Criar Usuário</string>
+    <string name="confirm_password">Confirmar Senha</string>
+</resources>

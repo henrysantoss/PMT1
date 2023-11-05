@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"> <!-- Define o fundo com transparência (no formato ARGB) -->
+
+        <ImageView
+            android:layout_width="278dp"
+            android:layout_height="189dp"
+            android:layout_marginStart="45dp"
+            android:alpha="0.5"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo"
+            android:contentDescription="@string/logo" />
+
+        <ListView
+            android:id="@+id/listaViagem"
+            android:layout_width="fill_parent"
+            android:layout_height="463dp"
+            android:dividerHeight="1dp" />
+
+        <Button
+            android:id="@+id/btnNovaViagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#640082"
+            android:text="Nova Viagem"
+            android:onClick="funcNovaViagem"/>
+
+    </LinearLayout>
+</ScrollView>

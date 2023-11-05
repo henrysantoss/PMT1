@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"> <!-- Define o fundo com transparência (no formato ARGB) -->
+
+        <ImageView
+            android:layout_width="278dp"
+            android:layout_height="189dp"
+            android:layout_marginLeft="45dp"
+            android:alpha="0.5"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:text="Refeição"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custo estimado por Refeição"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtCustoRefeicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint=" #fcc42c"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refeições por dia"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtRefeicaoDia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint=" #fcc42c"
+            android:inputType="number" />
+
+        <CheckBox
+            android:id="@+id/chkAdicionarViagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint=" #fcc42c"
+            android:text="Adicionar a viagem" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Cálculo Total:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtCalcTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint=" #fcc42c"
+            android:editable="false"
+            android:inputType="none" />
+
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#640082"
+            android:text="Voltar"
+            android:onClick="funcVoltar"/>
+
+        <Button
+            android:id="@+id/btnAvanca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#640082"
+            android:text="Avançar"
+            android:onClick="funcAvancar"/>
+
+    </LinearLayout>
+</ScrollView>

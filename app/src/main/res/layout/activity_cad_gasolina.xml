@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"> <!-- Define o fundo com transparência (no formato ARGB) -->
+
+        <ImageView
+            android:layout_width="219dp"
+            android:layout_height="157dp"
+            android:layout_marginLeft="60dp"
+            android:alpha="0.5"
+            android:contentDescription="LOGO"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:text="Gasolina"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total estimado de quilômetros"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtTotQuil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint=" #fcc42c"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Média de quilômetros por litro"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtMediaLitro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint=" #fcc42c"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custo médio por litro"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtCustoLitro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint=" #fcc42c"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total de Veículos"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtTotVeic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint=" #fcc42c"
+            android:inputType="number" />
+
+        <CheckBox
+            android:id="@+id/chkAdicionarViagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint=" #fcc42c"
+            android:text="Adicionar a viagem" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Cálculo Total:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtCalcTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint=" #fcc42c"
+            android:editable="false"
+            android:inputType="none" />
+
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#640082"
+            android:text="Voltar"
+            android:onClick="funcVoltar"/>
+
+        <Button
+            android:id="@+id/btnAvanca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#640082"
+            android:text="Avançar"
+            android:onClick="funcAvancar"/>
+
+    </LinearLayout>
+</ScrollView>
